@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<!-- CSS Markup via Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<div class="col-md-3">
+
+<script type="text/javascript">
+//area of a triangle given all three sides via Hero's Formula
+var AreaTriangle = function (a,b,c){
+	//inputs for all three sides
+	a=prompt("Input length of triangle side A");
+	b=prompt("Input length of triangle side B");
+	c=prompt("Input length of triangle side C"); {
+		//convert string to floats
+		var AreaA=parseFloat(a);
+		var AreaB=parseFloat(b);
+		var AreaC=parseFloat(c);
+		//write results on HTML
+			document.write("<h5>Side one is </h5> <code>" + (AreaA) + "</code>");
+			document.write("<br> <h5>Side two is </h5> <code>" + (AreaB) + "</code>");
+			document.write("<br> <h5>Side three is </h5> <code>" + (AreaC) + "</code>");
+		{
+			//basic formula
+			var Peri = (AreaA + AreaB + AreaC)/2; {
+				return Math.pow(((Peri)*(Peri-AreaA)*(Peri-AreaB)*(Peri-AreaC)),.5);
+			}
+		}
+	}
+}
+</script>		
+
+	<div class="alert alert-success" role="alert">
+		<script>
+			document.write("<br> <h4>The area of the triangle is </h4> <code>" + (AreaTriangle()) + "</code>");
+		</script>
+	</div>
+
+</div>
+
+</body>
+
+</html>
