@@ -7,47 +7,51 @@
 <!-- CSS Markup via Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
+<link rel="stylesheet" type="text/css" href="fonts.css">
+
+<link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
 
-<div class="col-md-3">
+<div class="alert alert-success text-center" role="alert">
 
-<script type="text/javascript">
-//area of a triangle given all three sides via Hero's Formula
-var AreaTriangle = function (a,b,c){
-	//inputs for all three sides
-	a=prompt("Input length of triangle side A");
-	b=prompt("Input length of triangle side B");
-	c=prompt("Input length of triangle side C"); {
-		//convert string to floats
-		var AreaA=parseFloat(a);
-		var AreaB=parseFloat(b);
-		var AreaC=parseFloat(c);
-		//write results on HTML
-			document.write("<h5>Side one is </h5> <code>" + (AreaA) + "</code>");
-			document.write("<br> <h5>Side two is </h5> <code>" + (AreaB) + "</code>");
-			document.write("<br> <h5>Side three is </h5> <code>" + (AreaC) + "</code>");
-		{
-			//basic formula
-			var Peri = (AreaA + AreaB + AreaC)/2; {
-				return Math.pow(((Peri)*(Peri-AreaA)*(Peri-AreaB)*(Peri-AreaC)),.5);
-			}
-		}
-	}
-}
-</script>		
-
-	<div class="alert alert-success" role="alert">
-		<script>
-			document.write("<br> <h4>The area of the triangle is </h4> <code>" + (AreaTriangle()) + "</code>");
-		</script>
+<h1>Hero's Formula: Find the triangle area</h1>
+	<p><h4>Input side A</h4></p>
+	<div class="input-group text-center col-md-4 col-md-offset-4">
+		<input size="30" value=" " id="input1" class="text-center">
+	</div>	
+	<p><h4>Input side B</h4></p>
+	<div class="input-group text-center col-md-4 col-md-offset-4">
+		<input size="7" value=" " id="input2" class="text-center">
 	</div>
+	<p><h4>Input side C</h4></p>
+	<div class="input-group text-center col-md-4 col-md-offset-4">
+		<input size="30" value=" " id="input3" class="text-center">
+	</div>
+
+	<br>
+
+	
+
+	<br>
+	<button id="input" class="btn btn-success" onclick="AreaTriangle()"><h3>
+		<span class="glyphicon glyphicon-triangle-top"><p>Solve</p></span>
+	</h3></button>
+
+<script src="HeroTriangle.js"></script>
+
+<p id="solve"></p>		
 
 </div>
 
 </body>
+
+<footer class="text-center">
+	<h6>2016 Sid Jay</h6>
+</footer>
 
 </html>
